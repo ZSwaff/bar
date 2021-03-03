@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bar</title>
+</head>
+<body>
+  <svg width="576" height="342" style="margin:20px">
+    <defs>
+      <linearGradient id="background">
+        <stop stop-color="#FFFAF0"/>
+      </linearGradient>
+      <linearGradient id="stain">
+        <stop stop-color="#260D00"/>
+      </linearGradient>
+      <linearGradient id="red">
+        <stop stop-color="#FF0000"/>
+      </linearGradient>
+      <linearGradient id="green">
+        <stop stop-color="#00FF00"/>
+      </linearGradient>
+      <linearGradient id="blue">
+        <stop stop-color="#0000FF"/>
+      </linearGradient>
+      <filter id="shadow1" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+      </filter>
+      <filter id="shadow2" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+      </filter>
+      <filter id="shadow3" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+      </filter>
+    </defs>
+    <rect x=0 y=0 width=576 height=342 fill="url(#background)" />
+    <g>
+{rect_bgs}
+    </g>
+    <g>
+{rect_fgs}
+    </g>
+    <g>
+{rects}
+    </g>
+    <g>
+      <rect x=0 y=0 width=6 height=342 fill="url(#stain)" />
+      <rect x=0 y=0 width=576 height=8 fill="url(#stain)" />
+      <rect x=570 y=0 width=6 height=342 fill="url(#stain)" />
+      <rect x=0 y=336 width=576 height=6 fill="url(#stain)" />
+    </g>
+  </svg>
+</body>
+</html>
